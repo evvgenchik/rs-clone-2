@@ -2,7 +2,7 @@ import { IUser, IResponseLogin } from '../utils/types';
 import { IBodyRequestPost } from '../utils/types';
 
 class ApiServer {
-  URL = 'https://fatsecret-clone.onrender.com';
+  URL = 'https://fatsecret-clone.onrender.com/';
 
   async sendUserServer(user: IUser, path: string) {
     try {
