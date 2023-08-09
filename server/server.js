@@ -21,7 +21,7 @@ app.use(commentRouter)
 const start = async () => {
   try {
     mongoose.set('strictQuery', true);
-    mongoose.connect('mongodb+srv://user:123@cluster0.pfipb8l.mongodb.net/?retryWrites=true&w=majority')
+    mongoose.connect(process.env.DB)
     app.listen(PORT, () => console.log(`server started on port ${PORT}`))
   } catch (e) {
     console.log(e);
